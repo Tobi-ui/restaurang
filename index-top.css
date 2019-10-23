@@ -1,0 +1,77 @@
+
+body {
+    background: url(img/sea.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	margin: 0;
+	color: white;
+	text-align: center; }
+
+* {box-sizing: border-box;}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100; }
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+@media (min-aspect-ratio: 16/9) {
+    .bg-video {
+        height: 300%;
+        top: -100%; }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .bg-video {
+        width: 300%;
+        left: -100%; }
+}
+
+@media (max-width: 767px) {
+    .bg-video {
+        display: none; }
+}
+
+.top { height: 77vh; }
+
+@media only screen and (orientation: portrait) {
+    .top { height: 70vh; }
+}
+
+.top img {
+    display: block;
+    margin: 0 auto;
+	margin-top: 170px;
+    margin-bottom: 50px;
+    height: 110px; }
+
+@media only screen and (min-width: 1500px) {  
+	.top img {
+    	height: 140px;
+		margin-top: 250px; }
+}
+
+#welcome {
+	font-size: 0.01vh;
+	color: #559E54;	
+	text-align: center;
+	text-shadow: 5px 5px 2vh rgba(0,0,0,0.7),5px 5px 2vh rgba(0,0,0,0.7);
+	font-family: 'Merienda', cursive; }
+
+.not {
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	font-family: 'Merienda', cursive; }

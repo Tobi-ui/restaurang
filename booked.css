@@ -1,0 +1,95 @@
+
+body {
+	background: url(img/home-book.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	margin: 0;
+}
+
+@media only screen and (min-width: 1500px) {  
+    .bg-box {
+        background: white;
+        width: 500px;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 25vh;
+        margin-bottom: 22vh;
+        padding: 40px 20px;
+        text-align: center; }
+}
+
+.bg-box {
+	background: white;
+	width: 400px;
+	height: 150px;
+	margin: 0 auto;
+	margin-top: 25vh;
+	margin-bottom: 22vh;
+	padding: 40px 20px;
+	text-align: center; }
+
+@media only screen and (min-width: 1500px) {  
+    .was {
+        font-family: 'Arima Madurai', cursive;
+        letter-spacing: 0.5px; 
+        font-size: 30px;
+        color: #559E54; }
+}
+
+.was {
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+	font-size: 23px;
+	color: #559E54; }
+
+@media only screen and (min-width: 1500px) {  
+    .login {
+        font-family: 'Arima Madurai', cursive;
+        letter-spacing: 0.5px; 
+        font-size: 20px;
+        padding-top: 20px; }
+}
+
+.login {
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+	font-size: 17px;
+	padding-top: 20px; }
+
+.bg-box button {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+    font-weight: bold;
+    font-size: 18px; 
+    padding: 8px 25px 6px 25px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+	margin-top: 30px; }
+
+@media only screen and (min-width: 1500px) {  
+    .bg-box button {
+        background-color: transparent;
+        border: 1px solid black;
+        box-sizing: border-box;
+        color: black;
+        font-family: 'Arima Madurai', cursive;
+        letter-spacing: 0.5px; 
+        font-weight: bold;
+        font-size: 22px; 
+        padding: 8px 25px 6px 25px;
+        cursor: pointer;
+        transition: background-color 0.4s;
+        margin-top: 45px; }
+}
+
+.bg-box button:hover{
+    background-color: #559E54;
+    border: 1px solid #559E54;
+    color: white;
+}

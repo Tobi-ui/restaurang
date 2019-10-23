@@ -1,0 +1,318 @@
+
+body {
+	margin: 0;
+	background: url(img/home-book.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Arima Madurai', cursive; }
+
+/* ------------------------- content for the unlogged page ---------------------- */
+#box-login{
+	background-color: rgba(255, 255, 255, 0.95);
+    margin: 125px auto 50px auto; 
+    border: 1px solid white;
+    width: 27%;
+    padding: 40px;
+    left: 0;
+    top: 0; }
+
+@media only screen and (min-width: 1500px) {  
+    #box-login{
+        background-color: rgba(255, 255, 255, 0.95);
+        margin: 17vh auto 170px auto; 
+        border: 1px solid white;
+        width: 25%;
+        padding: 40px;
+        left: 0;
+        top: 0; }
+}
+
+#box-login img {
+    display: block;
+    margin: 0 auto;
+    width: 11vh; }
+
+#box-login input[type=text], #box-login input[type=password] {      
+    border: 1px solid rgba(85,158,84, 0.3);
+    box-sizing: border-box;
+    border-radius: 0.5px;
+    color: black;
+    width: 100%;
+    font-size: 15px;   
+    padding: 8px 15px;
+    margin: 0.8vh 0;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif; }
+
+#box-login label {
+	font-size: 3vh;
+	text-align: left;
+	color: #559E54; }
+ 
+#box-login #submit { 
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+    font-weight: bold;
+    font-size: 22px; 
+    padding: 6px 30px 4px 30px;
+    width: 35%;
+    margin-left: 33%;
+    cursor: pointer;
+    transition: background-color 0.4s; }
+
+#box-login #submit:hover { 
+    background-color: #559E54;
+    border: 1px solid #559E54;
+    color: white; }
+
+.register {  
+    font-size: 2vh;  
+    font-family: 'Roboto', sans-serif;
+    padding: 0.8vh 0; }
+
+.register a{ color: green; }
+
+.error { 
+    text-align: center;
+    color: red;
+    font-size: 2vh;
+    font-family: 'Roboto', sans-serif; }
+
+
+/* -------------------- END Of Unlogged Page -------------------------------- */
+
+#no_one {
+    font-size: 4vh;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    width: 50%;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    margin-left: 50vh;
+    color: red; }
+
+@media only screen and (min-width: 1500px) {  
+    #no_one {
+        font-size: 6vh;
+        text-align: center;
+        background: white;
+        padding: 20px;
+        width: 70%;
+        margin-top: 30vh;
+        margin-bottom: 30vh;
+        margin-left: 25vh;
+        color: red; }
+} 
+
+
+/* ------------------------------------------------------------- content for the inlogged page ------------------------------------------------- */
+#cebow {
+	color: white;
+    font-size: 40px;
+    margin-bottom: 2vh;
+    margin-top: 14vh;
+    text-align: center;
+    text-shadow: 5px 5px 2vh rgba(0,0,0,0.7),5px 5px 2vh rgba(0,0,0,0.7); }
+
+@media only screen and (min-width: 1500px) {  
+    #cebow {
+        color: white;
+        font-size: 55px;
+        margin-bottom: 2vh;
+        margin-top: 11vh;
+        text-align: center;
+        text-shadow: 5px 5px 2vh rgba(0,0,0,0.7),5px 5px 2vh rgba(0,0,0,0.7); }
+}
+/* ----------------------------    START  Form      ------------------------ */
+
+.reserve {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px 30px;
+    text-align: center;
+    width: 35vw;
+    margin-left: 30vw;
+    border-bottom: 1px solid black; }
+
+@media only screen and (min-width: 1500px) {  
+    .reserve {
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 20px 30px;
+        text-align: center;
+        width: 30vw;
+        margin-left: 33vw;
+        border-bottom: 1px solid black; }
+}
+
+.reserve input[type=submit] {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+    font-weight: bold;
+    font-size: 18px; 
+    padding: 8px 40px 6px 40px;
+    cursor: pointer;
+    transition: background-color 0.4s; }
+
+@media only screen and (min-width: 1500px) {  
+    .reserve input[type=submit] {
+        background-color: transparent;
+        border: 1px solid black;
+        box-sizing: border-box;
+        color: black;
+        font-family: 'Arima Madurai', cursive;
+        letter-spacing: 0.5px; 
+        font-weight: bold;
+        font-size: 20px; 
+        padding: 8px 25px 6px 25px;
+        cursor: pointer;
+        transition: background-color 0.4s; }
+}
+
+.dishes {
+    color: black;
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+    font-weight: bold;
+    font-size: 14px; 
+    padding: 6px 15px 4px 1px;
+    cursor: pointer;
+    transition: background-color 0.4s; }
+
+.dishes img {
+    float: right;
+    margin-left: -20px;
+    margin-top: -5px; }
+
+@media only screen and (min-width: 1500px) {  
+    .dishes img {
+        float: right;
+        margin-left: -30px;
+        margin-top: -5px; }
+}
+
+.dishes a {
+    color: black; }
+
+.dishes a:hover { 
+    color: #559E54; }
+
+.reserve input[type=submit]:hover {
+    background-color: #559E54;
+    border: 1px solid #559E54;
+    color: white; }
+
+/* ----------------------------    END  Form      ------------------------ */
+
+
+
+/* ----------------------------    Start  Reservations Made    ------------------------ */
+
+.reservations {
+    background-color: rgba(255, 255, 255, 0.95); 
+    padding: 20px 30px;
+    text-align: center;
+    width: 35vw;
+    margin-left: 30vw;
+    margin-bottom: 100px; }
+
+@media only screen and (min-width: 1500px) {  
+    .reservations {
+        background-color: rgba(255, 255, 255, 0.95); 
+        padding: 20px 30px;
+        text-align: center;
+        width: 30vw;
+        margin-left: 33vw;
+        margin-bottom: 100px; }
+}
+
+.reservations p {
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+    font-size: 28px; }
+
+@media only screen and (min-width: 1500px) {  
+    .reservations p {
+        font-family: 'Arima Madurai', cursive;
+        letter-spacing: 0.5px; 
+        font-size: 35px; }
+}
+
+.reservations table { margin: 0 auto; }
+
+.reservations table th {
+    font-size: 16px;
+    text-align: right;
+    color: #559E54;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif; }
+
+@media only screen and (min-width: 1500px) {  
+    .reservations table th {
+        font-size: 18px;
+        text-align: right;
+        padding: 10px;
+        font-family: 'Montserrat', sans-serif; }
+}
+
+.reservations table td {
+    font-size: 15px;
+    text-align: left;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif; }
+
+@media only screen and (min-width: 1500px) {  
+    .reservations table td {
+        font-size: 18px;
+        text-align: left;
+        padding: 8px 20px;
+        font-family: 'Montserrat', sans-serif; }        
+}
+
+.reservations input[type=submit] {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+    font-weight: bold;
+    font-size: 15px; 
+    padding: 8px 25px 6px 25px;
+    cursor: pointer;
+    transition: background-color 0.4s; }
+
+@media only screen and (min-width: 1500px) {  
+    .reservations input[type=submit] {
+        background-color: transparent;
+        border: 1px solid black;
+        box-sizing: border-box;
+        color: black;
+        font-family: 'Arima Madurai', cursive;
+        letter-spacing: 1px; 
+        font-weight: bold;
+        font-size: 15px; 
+        padding: 8px 25px 6px 25px;
+        cursor: pointer;
+        transition: background-color 0.4s; }       
+}
+
+.reservations input[type=submit]:hover {
+    background-color: rgb(255, 59, 48);
+    border: 1px solid rgb(255, 59, 48);
+    color: white; }
+
+/* ----------------------------    END  Reservations Made    ------------------------ */
+

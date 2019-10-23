@@ -1,0 +1,131 @@
+
+.underunder {
+	background: url(img/home-review.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	padding-top: 90px;
+	padding-bottom: 40px;
+	font-family: 'Arima Madurai', cursive;
+	letter-spacing: 0.5px; }
+
+@media only screen and (min-width: 1500px) {  
+	.underunder {
+		background: url(img/home-review.png);
+	    background-position: center top;
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+		padding-top: 100px;
+		padding-bottom: 30px;
+		font-family: 'Arima Madurai', cursive;
+		letter-spacing: 0.5px; }
+}
+
+.reviews_from {
+	margin: 0 auto;
+	font-size: 30px;
+	padding-bottom: 10px;
+	color: black; }
+
+@media only screen and (min-width: 1500px) {  
+	.reviews_from {
+		margin: 0 auto;
+		font-size: 40px;
+		padding-bottom: 20px;
+		color: black; }
+}
+
+.pomodoro {
+	font-size: 25px;
+	padding-top: 10px;
+	color: #559E54;	
+	text-align: left;
+	font-family: 'Merienda', cursive; }
+
+.notas {
+	text-align: left;
+	margin: 0 auto;
+	overflow-x: auto;
+	height: 72vh;
+	width: 60%;
+	margin-bottom: 20px;
+	line-height: 22px; }
+
+.container {
+    background: white;
+  	padding: 2px 20px;
+  	margin-bottom: 10px;
+  	color: black;
+  	font-size: 14px; }
+
+@media only screen and (min-width: 1500px) {  
+	.container {
+	    background: white;
+	  	padding: 5px 30px;
+	  	margin-bottom: 10px;
+	  	color: black;
+	  	font-size: 15px; }
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table; }
+
+.container .head {
+    margin-right: 15px; 
+	color: black; }
+
+.container .head b { 
+	font-size: 15px; 
+	color: black; }
+
+@media only screen and (min-width: 1500px) {  
+	.container .head b { font-size: 17px; }
+}
+
+.container span {
+    font-size: 15px;
+    color: #559E54; }
+
+@media only screen and (min-width: 1500px) {  
+	.container span {
+	    font-size: 13px;
+	    color: grey;
+	}
+}
+
+.container p { font-family: 'Ovo', serif; }
+
+#toTop, #toTopp {
+	display: none;
+  	position: fixed;
+  	bottom: 20px;	
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 55%;
+    border: 1px solid white;
+    transition: background-color 0.4s;
+    z-index: 99;
+}
+
+@media only screen and (min-width: 1500px) {  
+	#totop {
+	    background-color: white;
+	    border: 1px solid black;
+	    box-sizing: border-box;
+	    color: black;
+	    font-size: 22px;
+	    font-weight: bold; 
+	    padding: 10px 15px 5px 15px;
+	    cursor: pointer;
+	    transition: background-color 0.4s;
+	    width: 170px;
+	    margin: 0 auto;
+	}
+}
+
+#toTop:hover, #toTopp:hover {
+    background-color: #559E54;
+
+/* ------------------------------- END Reviews ----------------------*/

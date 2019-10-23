@@ -1,0 +1,145 @@
+
+body {
+    background: url(img/sea2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Merienda', cursive; 
+}
+
+#box-signup{
+    background-color: rgba(250, 250, 255, 0.8); 
+    box-shadow: 0.7vh 0.7vh 8vh 0.7vh rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+    width: 50vh; 
+    margin: 9vh auto 1vh auto; 
+    padding: 2vh 4vh;
+    left: 0;
+    top: 0;
+}
+
+#box-signup img {
+    display: block;
+    margin: 0 auto;
+    width: 11vh;
+}
+
+#box-signup .create{
+  color: #559E54;
+    text-align: center;
+    margin-top: -0.5vh;
+    margin-bottom: 1vh;
+    font-size: 3vh;
+    letter-spacing: 0.4vh;
+}
+
+/* form starting stylings ------------------------------------------------ */
+.group        {
+  position:relative; 
+  margin-bottom: 3vh;
+}
+input {
+  background: transparent;
+  display:block;
+  padding: 1.2vh 1vh;
+  font-size: 2vh;
+  border:none;
+  border-bottom:1.5px solid #559E54;
+  font-family: 'Montserrat', sans-serif;
+  width: 96%;
+}
+input:focus { 
+  outline:none; }
+
+/* LABEL ======================================= */
+label          {
+  font-size: 2.3vh;
+  font-weight:normal;
+  color: #559E54;
+  position:absolute;
+  pointer-events:none;
+  top:0.5vh;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label     {
+  right: 0;
+}
+
+/* BOTTOM BARS ================================= */
+.bar  { 
+  position:relative; 
+  display:block; 
+  width:100%;
+  margin: 0 auto; 
+}
+.bar:before, .bar:after   {
+  content:'';
+  height:0.4vh; 
+  width:0;
+  bottom:0.1px; 
+  position:absolute;
+  background:#559E54; 
+  transition:0.3s ease all; 
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* end form starting stylings ------------------------------------------------ */
+
+#box-signup button { 
+    background-color: #559E54;
+    border: 1px solid green;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: white; 
+    font-weight: bold;   
+    font-size: 1.8vh;   
+    cursor: pointer;        
+    width: 100%;
+    padding: 1vh 2vh;
+    margin: 0.8vh 0;
+    display: inline-block;
+    transition: background-color 0.3s;
+    font-family: 'Merienda', cursive; 
+    letter-spacing: 0.4vh;
+}
+
+#box-signup button:hover {
+    background-color: green;
+}
+
+#box-signup .empty {
+    text-align: center;
+    color: red;
+    font-size: 2vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.policy {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vh;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+.policy a {
+    color: lightgreen;
+}
+
+.policy a:hover {
+    color: green;
+}

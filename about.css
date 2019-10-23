@@ -1,0 +1,38 @@
+
+body {
+	margin: 0;
+	background: url(img/about.png);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Arima Madurai', cursive;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+@media only screen and (min-width: 1500px) {  
+	.box {
+		width: 40%;
+		margin: 0 auto;
+		padding: 20px;
+		background: rgba(255, 255, 255, 0.95);
+		font-size: 20px; }
+}
+
+.box {
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+	background: rgba(255, 255, 255, 0.95);
+	font-size: 17px; }
+
+.box a {
+	text-decoration: underline;
+	border-bottom: #559E54;
+	color: #559E54;
+}
+
+.box a:hover {
+	color: green;
+}

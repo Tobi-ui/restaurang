@@ -1,0 +1,33 @@
+
+body {
+	background: url(img/home-book.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	margin: 0;
+}
+
+.bg-box {
+	background: white;
+	width: 500px;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 30vh;
+	margin-bottom: 25vh;
+	padding: 40px 20px;
+	text-align: center;
+}
+
+.has {
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+	font-size: 30px;
+	color: red;
+}
+
+.please {
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+	font-size: 20px;
+	padding-top: 20px;
+}

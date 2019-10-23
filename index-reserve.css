@@ -1,0 +1,347 @@
+
+.under {
+	/*background-color: rgb(244, 243, 232);*/
+	background: url(img/home-book.png);
+	background-position: center bottom;
+    background-attachment: fixed;
+	color: black;
+	height: 100vh;
+	position: relative;
+}
+
+.book {
+    content: '';
+    position: absolute;              
+    width: 34%; 
+    left: 33%;
+    height: 87%;
+    top: 11%;
+    overflow-y: auto;
+    padding-top: 20px;
+	background: rgba(255, 255, 255, 0.95); }
+
+@media only screen and (min-width: 1500px) { 
+    .book {
+        content: '';
+        position: absolute;              
+        width: 30%; 
+        left: 36%;
+        height: 80%;
+        top: 13%;
+        overflow-y: auto;
+        padding-top: 30px;
+        background: rgba(255, 255, 255, 0.95); }
+}
+
+@media only screen and (orientation: portrait) {
+    .book {
+        content: '';
+        position: absolute;              
+        width: 95%; 
+        left: 2.5%;
+        height: 80%;
+        top: 3%;
+        overflow-y: auto;
+        padding-top: 30px;
+        background: rgba(255, 255, 255, 0.95); }
+}
+
+#order table { margin: 0 auto; }
+
+#order table caption {
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px;
+	font-size: 30px;
+    padding-bottom: 25px; }
+
+@media only screen and (min-width: 1500px) { 
+    #order table caption {
+        font-family: 'Arima Madurai', cursive;
+        letter-spacing: 0.5px; 
+        font-size: 35px;
+        padding-top: 10px;
+        padding-bottom: 20px; }
+}
+
+#order table td { padding-bottom: 30px; }
+
+@media only screen and (min-width: 1500px) {  
+    #order table td { padding-bottom: 40px; }
+}
+
+#order .by {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    margin: 0 auto;
+    width: 85%;
+    margin-top: -30px;
+    line-height: 27px; }
+
+#order .by a {
+    text-decoration: underline;
+    border-bottom: #559E54;
+    color: #559E54; }
+
+#order .by a:hover { color: green; }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+}
+
+input[type=text], input[type=password] {
+    color: black;
+	font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    background: white;
+    display: inline-block;
+    text-align: center;
+    padding: 9px 15px;
+    width: 27vw;
+    border-style: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(85,158,84, 0.3); }
+
+@media only screen and (min-width: 1500px) {  
+    input[type=text], input[type=password] {
+        color: black;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        background: white;
+        display: inline-block;
+        text-align: center;
+        padding: 12px 15px;
+        width: 27vw;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(85,158,84, 0.5); }
+}
+
+.custom-select {    /*the container must be positioned relative:*/
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    width: 27vw;
+    font-size: 13px; }
+
+@media only screen and (min-width: 1500px) {  
+    .custom-select {
+        position: relative;
+        font-family: 'Montserrat', sans-serif;
+        width: 27vw;
+        font-size: 15px; }
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected { background-color: white; }
+
+.select-selected:after {    /*style the arrow inside the select element:*/
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: black transparent transparent transparent; }
+
+@media only screen and (min-width: 1500px) { 
+    .select-selected:after {    /*style the arrow inside the select element:*/
+      position: absolute;
+      content: "";
+      top: 19px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-color: black transparent transparent transparent; }
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent black transparent;
+  top: 7px; }
+
+@media only screen and (min-width: 1500px) { 
+    .select-selected.select-arrow-active:after {
+      border-color: transparent transparent black transparent;
+      top: 13px; }
+}
+
+.select-items div,.select-selected {    /*style the items (options), including the selected item:*/
+    padding: 8.5px 15px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px; 
+    border-color: rgba(85,158,84, 0.3); }
+
+@media only screen and (min-width: 1500px) {  
+    .select-items div,.select-selected {
+        padding: 12px 15px;
+        cursor: pointer;
+        border-style: solid;
+        border-width: 1px; 
+        border-color: rgba(85,158,84, 0.5); }
+}
+
+.select-items div:hover { background: rgba(85,158,84, 0.5); }
+
+.select-items { /*style items (options):*/
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99; }
+/*hide the items when the select box is closed:*/
+.select-hide { display: none; }
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(85,158,84, 0.5); }
+
+.under input[type=button] {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+    font-weight: bold;
+    font-size: 17px; 
+    padding: 8px 25px 6px 25px;
+    margin-top: 35px;
+    cursor: pointer;
+    transition: background-color 0.4s; }
+
+@media only screen and (min-width: 1500px) {  
+    .under input[type=button] { 
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+        box-sizing: border-box;
+        color: black;
+        font-family: 'Arima Madurai', cursive;
+        letter-spacing: 0.5px; 
+        font-weight: bold;
+        font-size: 17px; 
+        padding: 10px 25px 8px 25px;
+        margin-top: 35px;
+        cursor: pointer;
+        transition: background-color 0.4s; }
+}
+
+.under input[type=button]:hover {
+    background-color: #559E54;
+    border: 1px solid #559E54;
+    color: white; }
+
+.secondpage table {
+    font-family: 'Arima Madurai', cursive;
+	margin: 0 auto; }
+
+.secondpage table caption {
+    letter-spacing: 0.5px; 
+	font-size: 30px; }
+
+@media only screen and (min-width: 1500px) {  
+    .secondpage table caption {
+        padding-top: 10px;
+        font-size: 40px;
+    }
+}
+
+.secondpage table td { padding: 13px; }
+
+@media only screen and (min-width: 1500px) {  
+    .secondpage table td { padding: 20px; }
+}
+
+.secondpage span {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 18px; }
+
+@media only screen and (min-width: 1500px) {  
+    .secondpage span {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 23px; }
+}
+
+.secondpage .by {
+    font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	position: absolute;
+	margin: 0 auto;
+	margin-top: -30px;
+	line-height: 27px;
+	padding-bottom: 30px; }
+
+@media only screen and (min-width: 1500px) {  
+    .secondpage .by {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        position: absolute;
+        margin: 0 auto;
+        margin-top: -30px;
+        line-height: 27px;
+        padding-bottom: 30px; }
+}
+
+.secondpage label {
+	font-size: 17px;
+	left: 0;
+	padding-left: 7vh;
+	position: absolute;
+	color: #559E54; }
+
+@media only screen and (min-width: 1500px) {  
+    .secondpage label {
+        font-size: 20px;
+        left: 0;
+        padding-left: 7vh;
+        position: absolute;
+        color: #559E54; }
+}
+
+.secondpage a {
+	text-decoration: underline;
+	border-bottom: #559E54;
+	color: #559E54; }
+
+.secondpage a:hover { color: green; }
+
+.under input[type=submit] {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+    font-weight: bold;
+    font-size: 17px; 
+    padding: 8px 25px 6px 25px;
+    cursor: pointer;
+    transition: background-color 0.4s; }
+
+@media only screen and (min-width: 1500px) {  
+    .under input[type=submit] { 
+        font-size: 18px; 
+        padding: 10px 27px 6px 27px; }
+}
+
+.under input[type=submit]:hover {
+    background-color: #559E54;
+    border: 1px solid #559E54;
+    color: white; }

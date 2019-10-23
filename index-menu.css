@@ -1,0 +1,217 @@
+
+.bg {background: white;}
+
+.blancou {height: 5vh;}
+
+.check {
+    position: relative;
+	color: black;
+	text-align: center; }
+
+h1 {
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+	font-size: 25px;
+	padding-top: 8vh;
+	padding-bottom: 2vh;
+	font-family: 'Merienda', cursive; }
+
+@media only screen and (min-width: 1500px) {  
+	h1 {
+	    display: inline-block;
+	    padding: 0 15px;
+	    position: relative;
+		font-size: 35px;
+		padding-top: 8vh;
+		padding-bottom: 2vh;
+		font-family: 'Merienda', cursive; }
+}
+
+h1:before, h1:after {
+  background: black;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 70%;
+  width: 50%; }
+
+@media only screen and (orientation: portrait) {
+	h1:before, h1:after {
+	  background: black;
+	  content: "";
+	  display: block;
+	  height: 1px;
+	  position: absolute;
+	  top: 70%;
+	  width: 10%; }
+}
+
+h1:before { right: 100%; }
+
+h1:after { left: 100%; }
+
+.accordion {
+  	position: relative;
+    cursor: pointer;
+    color: white;
+    padding: 18px;
+    width: 100%;
+    height: 15vh;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    font-family: 'Merienda', cursive; 
+	border-top: 0.25px solid black;border-bottom: 0.25px solid black;
+	transition: 0.4s;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.7); }
+
+@media only screen and (min-width: 1500px) {  
+	.accordion {
+	  	position: relative;
+	    cursor: pointer;
+	    color: white;
+	    padding: 18px;
+	    width: 100%;
+	    height: 15vh;
+	    border: none;
+	    text-align: center;
+	    outline: none;
+	    font-size: 30px;
+	    letter-spacing: 0.5px;
+	    font-family: 'Merienda', cursive; 
+		border-top: 0.25px solid black;border-bottom: 0.25px solid black;
+		transition: 0.4s;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.7); }
+}
+
+@media only screen and (orientation: portrait) {
+	.accordion {
+	  	position: relative;
+	    cursor: pointer;
+	    color: white;
+	    padding: 18px;
+	    width: 100%;
+	    height: 15vh;
+	    border: none;
+	    text-align: center;
+	    outline: none;
+	    font-size: 20px;
+	    letter-spacing: 0.5px;
+	    font-family: 'Merienda', cursive; 
+		border-top: 0.25px solid black;border-bottom: 0.25px solid black;
+		transition: 0.4s;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.7); }
+}
+
+.accordion1 {background: url("img/home-starter-panel.png");border-top: 2px solid black;}
+.accordion2 {background: url("img/home-main-panel.png");}
+.accordion3 {background: url("img/home-dessert-panel.png");}
+.accordion4 {background: url("img/home-drinks-panel.png");border-bottom: 2px solid black;}
+
+.active, .accordion:hover { font-size: 33px; }
+
+@media only screen and (min-width: 1500px) {  
+	.active, .accordion:hover {
+	    font-size: 40px; }
+}
+
+.accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px; }
+
+.active:after { content: "\2212"; }
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+.panel1 {background-image: url("img/home-starter-dishes.png");}
+.panel2 {background-image: url("img/home-main-dishes.png");}
+.panel3 {background-image: url("img/home-dessert-dishes.png");}
+.panel4 {background-image: url("img/home-drinks-dishes.png");}
+
+.panel table {
+	border-collapse: collapse;
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+	margin: 0 auto;
+	width: 70%;
+	background: rgba(255, 255, 255, 0.95);
+	color: black; }
+
+@media only screen and (min-width: 1500px) {  
+	.panel table { width: 45%; }
+}
+
+@media only screen and (orientation: portrait) {
+	.panel table { width: 95%; }
+}
+
+.dish-name {
+	color: #559E54;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: left;
+	width: 90%;
+	margin-left: 3%; }
+
+@media only screen and (min-width: 1500px) {  
+	.dish-name {
+		font-size: 20px; }
+}
+
+.dish-recipes {
+	font-size: 15px;
+	margin-top: -2vh;
+	text-align: left;
+	width: 90%;
+	margin-left: 3%;
+	color: black; }
+
+@media only screen and (min-width: 1500px) {  
+	.dish-recipes {
+		font-size: 16px; }
+}
+
+.dish-price {
+	font-size: 17px;
+	width: 70px; }
+
+.bar {
+	padding: 20px;
+	width: 45%;
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.93);
+	color: black; }
+
+#drink-name {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Ovo', serif; 
+	color: #559E54; }
+
+#drink-recipes {
+	font-size: 16px;
+	font-family: 'Ovo', serif;
+	color: black; }
+
+#drink-recipes1 {
+	font-size: 16px;
+	font-family: 'Ovo', serif;
+	color: black;
+	margin-bottom: 60px; }
+
+.blanco { height: 15vh; }

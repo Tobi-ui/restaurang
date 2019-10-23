@@ -1,0 +1,430 @@
+
+body {
+	/*background: #f5efeb;*/
+	font-family: 'Merienda', cursive; 
+	background: url("img/contact.jpg");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	color: white;
+}
+
+.restaurant-p {
+	margin-top: 10vh;
+	text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 15vh;
+}
+
+.desc {
+	padding: 1.5vh;
+	text-align: center;
+	font-size: 5vh;
+}
+
+.message {
+	margin-top: 5vh;
+	margin-bottom: 2vh;
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+}
+
+/* form starting stylings ------------------------------------------------ */
+.group        {
+  position:relative; 
+  margin-top:5vh;
+  margin-bottom:0.5vh; 
+}
+input {
+  background: transparent;
+  color: white;
+  display:block;
+  padding: 1.3vh 1vh;
+  font-size: 16px;
+  border:none;
+  border-bottom:1.5px solid #559E54;
+  font-family: 'Montserrat', sans-serif;
+  width: 80%;
+  margin: 0 auto;
+}
+textarea {
+  background: transparent;
+  color: white;
+  display:block;
+  padding: 1.3vh 1vh;
+  font-size: 16px;
+  border:none;
+  border-bottom:1.5px solid #559E54;
+  font-family: 'Montserrat', sans-serif;
+  width: 92%;
+  height: 8vh;
+  margin: 0 auto;
+}
+input:focus { 
+  outline:none;
+  color: white; }
+
+textarea:focus { 
+  outline:none;
+  color: white; }
+
+/* LABEL ======================================= */
+label          {
+  font-size: 19px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:4.5vh;
+  top:1vh;
+  transition:0.2s ease all; 
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label     {
+  top:-2.5vh;
+  font-size: 16px;
+}
+textarea:focus ~ label, textarea:valid ~ label     {
+  top:-2.5vh;
+  font-size: 16px;
+}
+
+/* BOTTOM BARS ================================= */
+.bar  { 
+  position:relative; 
+  display:block; 
+  width:84%;
+  margin: 0 auto; 
+}
+.bar:before, .bar:after   {
+  content:'';
+  height:0.4vh; 
+  width:0;
+  bottom:0.1px; 
+  position:absolute;
+  background:#559E54; 
+  transition:0.2s ease all; 
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+  width:56%;
+}
+
+/* end form starting stylings ------------------------------------------------ */
+
+
+.message caption {
+	font-size: 16px;
+	padding-bottom: 1vh;
+}
+
+.message table {  
+	margin: 0 auto;
+	padding: 2vh;
+	width: 50%;
+	text-align: center;
+    border-collapse: collapse;
+}
+ 
+.message input[type=submit] { 
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 1px; 
+    background-color: transparent;
+    border: 2px solid white;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    font-size: 22px; 
+    padding: 6px 15px 4px 15px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.message input[type=submit]:hover { 
+	border: 2px solid #559E54;
+    background-color: #559E54;
+}
+
+.sended{
+	text-align: center;
+	color: green;
+	font-size: 18px;
+}
+
+.contact {
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 1px; 
+	font-size: 15px;
+	margin-top: 3vh;
+	padding-left: 5vw;
+}
+
+.contact table {
+	margin: 0 auto;
+	padding: 2vh;
+	width: 40%;
+    border-collapse: collapse;
+}
+
+.contact table th {
+	padding: 0.5vh;
+	text-align: left;
+	width: 20vh;
+}
+
+.contact table td {
+	padding: 0.5vh;
+	text-align: left;
+	width: 60vh;
+}
+
+.contact a {
+	text-decoration: none;
+	color: white;
+}
+
+.contact a:hover {
+	color: #559E54;
+}
+
+#map {
+	border-top: 1px solid black; 
+	width: 100%;
+	height: 50vh;
+}
+
+@media only screen and (orientation: portrait) {  /* when the browser window is 1100px wide or less */
+
+	body {
+		/*background: #f5efeb;*/
+		font-family: 'Merienda', cursive; 
+	    background-position: center top;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-attachment: fixed;
+		color: white;
+	}
+
+	#myVideo {
+	    position: fixed;
+	    right: 0;
+	    bottom: 0;
+	    min-width: 100vw; 
+	    min-height: 100vh;
+	    z-index: -10;
+	}
+
+	.restaurant-p {
+		margin-top: 10vh;
+		text-align: center;
+	}
+
+	img {
+	    display: block;
+	    margin: 0 auto;
+	    width: 18vh;
+	}
+
+	.desc {
+		padding: 1.5vh;
+		text-align: center;
+		font-size: 5vh;
+	}
+
+	.message {
+		margin-top: 5vh;
+		margin-bottom: 2vh;
+	}
+
+	/* form starting stylings ------------------------------------------------ */
+	.group        {
+	  position:relative; 
+	  margin-top:5vh;
+	  margin-bottom:0.5vh; 
+	}
+	input {
+	  background: transparent;
+	  color: white;
+	  display:block;
+	  padding: 1.3vh 1vh;
+	  font-size: 2vh;
+	  border:none;
+	  border-bottom:1.5px solid #559E54;
+	  font-family: 'Montserrat', sans-serif;
+	  width: 80%;
+	  margin: 0 auto;
+	}
+	textarea {
+	  background: transparent;
+	  color: white;
+	  display:block;
+	  padding: 1.3vh 1vh;
+	  font-size: 2vh;
+	  border:none;
+	  border-bottom:1.5px solid #559E54;
+	  font-family: 'Montserrat', sans-serif;
+	  width: 92%;
+	  height: 8vh;
+	  margin: 0 auto;
+	}
+	input:focus { 
+	  outline:none;
+	  color: white; }
+
+	textarea:focus { 
+	  outline:none;
+	  color: white; }
+
+	/* LABEL ======================================= */
+	label          {
+	  font-size: 2.5vh;
+	  font-weight:normal;
+	  position:absolute;
+	  pointer-events:none;
+	  left:4.5vh;
+	  top:1vh;
+	  transition:0.2s ease all; 
+	}
+
+	/* active state */
+	input:focus ~ label, input:valid ~ label     {
+	  top:-2.5vh;
+	  font-size: 2vh;
+	}
+	textarea:focus ~ label, textarea:valid ~ label     {
+	  top:-2.5vh;
+	  font-size: 2vh;
+	}
+
+	/* BOTTOM BARS ================================= */
+	.bar  { 
+	  position:relative; 
+	  display:block; 
+	  width:84%;
+	  margin: 0 auto; 
+	}
+	.bar:before, .bar:after   {
+	  content:'';
+	  height:0.4vh; 
+	  width:0;
+	  bottom:0.1px; 
+	  position:absolute;
+	  background:#559E54; 
+	  transition:0.2s ease all; 
+	}
+	.bar:before {
+	  left:50%;
+	}
+	.bar:after {
+	  right:50%; 
+	}
+
+	/* active state */
+	input:focus ~ .bar:before, input:focus ~ .bar:after {
+	  width:50%;
+	}
+	textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+	  width:56%;
+	}
+
+	/* end form starting stylings ------------------------------------------------ */
+
+
+	.message caption {
+		font-size: 3vh;
+		padding-bottom: 1vh;
+	}
+
+	.message table {  
+		margin: 0 auto;
+		padding: 2vh;
+		width: 98%;
+		text-align: center;
+	    border-collapse: collapse;
+	}
+	 
+	.message input[type=submit] { 
+	    background-color: #559E54;
+	    border: 1px solid green;
+	    box-sizing: border-box;
+	    border-radius: 3px;
+	    color: white; 
+	    font-weight: bold;   
+	    font-size: 2vh;   
+	    cursor: pointer;        
+	    width: 30%;
+	    padding: 1.2vh 2vh;
+	    margin-top: 3vh;
+	    display: inline-block;
+	    transition: background-color 0.4s;
+	}
+
+	.message input[type=submit]:hover { 
+	    color: #559E54;
+	    background-color: #D4F7D4;
+	}
+
+	.sended{
+		text-align: center;
+		color: green;
+		font-size: 2vh;
+	}
+
+	.contact {
+		font-size: 1.8vh;
+		margin-top: 3vh;
+	}
+
+	.contact table {
+		margin: 0 auto;
+		padding: 2vh;
+		width: 70%;
+		text-align: center;
+	    border-collapse: collapse;
+	}
+
+	.contact table th {
+		padding: 0.5vh;
+		text-align: left;
+		width: 20vh;
+	}
+
+	.contact table td {
+		padding: 0.5vh;
+		text-align: left;
+		width: 60vh;
+	}
+
+	.contact a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.contact a:hover {
+		color: #559E54;
+	}
+
+	#map {
+		border-top: 1px solid black; 
+		width: 100%;
+		height: 80vh;
+	}
+}

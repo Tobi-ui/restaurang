@@ -1,0 +1,84 @@
+
+body {margin: 0;}
+
+::-webkit-scrollbar {
+    width: 11px;
+    background: rgb(220,220,220);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #559E54; 
+    border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: green; 
+}
+
+::selection {           /* när man selectar text */
+    background: #559E54;
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: #559E54;
+}
+
+.irak {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1 solid rgba(200, 200, 200, 0.7);
+    text-decoration: none;
+    position: fixed;
+    font-family: 'Arima Madurai', cursive;
+    letter-spacing: 0.5px; 
+    top: 0;
+    width: 100%; 
+    z-index: 10; }
+
+.irak a {
+    text-decoration: none;
+    color: black; }
+
+.head { margin: 0 auto; }
+
+.head a { /*border: 1 solid red;*/
+    text-decoration: none;
+    display: flex;
+    font-size: 23px; 
+    padding: 0 10px;
+    margin: 0 30px;
+    -webkit-user-select: none; /* Safari 3.1+ */        /* för att man inte ska kunna selecta text */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; } /* Standard syntax */
+
+@media only screen and (orientation: portrait) {
+    .head a {
+        text-decoration: none;
+        display: flex;
+        font-size: 30px; 
+        padding: 0 10px;
+        margin: 0 10px;
+        -webkit-user-select: none; /* Safari 3.1+ */        /* för att man inte ska kunna selecta text */
+        -moz-user-select: none; /* Firefox 2+ */
+        -ms-user-select: none; /* IE 10+ */
+        user-select: none; } /* Standard syntax */
+}
+
+.head a:hover { color: #559E54; }
+
+.head ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 8px; }
+
